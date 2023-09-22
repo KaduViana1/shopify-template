@@ -1,0 +1,27 @@
+<h1>{{ shop.name }}</h1>
+<div>
+  <ul class="header-nav">
+    {% for link in section.settings.navigation.links %}
+      <li>
+        <a href="{{link.url}}">
+          {{ link.title }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+
+{% schema %}
+  {
+    "name": "Header",
+    "tag": "header",
+    "settings": [
+      {
+        "type": "link_list",
+        "id": "navigation",
+        "label": "Navigation",
+        "default": "main-menu"
+      }
+    ]
+  }
+{% endschema %}
