@@ -13,13 +13,13 @@
       {
         "type": "color",
         "id": "background_color",
-        "label": "Background",
+        "label": "Cor de Fundo",
         "default": "#ffffff"
       },
       {
         "type": "color",
         "id": "text_color",
-        "label": "Text Color",
+        "label": "Cor do texto",
         "default": "#000000"
       }
     ]
